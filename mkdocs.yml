@@ -1,0 +1,14 @@
+site_name: Personal Knowledge Base
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - search.suggest
+plugins:
+  - search
+  - tags
+  - awesome-pages
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - meta
