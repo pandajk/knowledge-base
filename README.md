@@ -1,6 +1,3 @@
-Apologies for the formatting oversight in the previous response. Below is the corrected **README.md** file, strictly in Markdown format, covering the **MkDocs + Git + pCloud** knowledge base setup. It includes all functionalities: clear directory structure, massive Markdown file support, cross-device sync, RAG compatibility, AI automation, and Android/iOS browsing/editing, as per your requirements. I've ensured proper Markdown syntax throughout, starting from the project initialization and beyond.
-
-```markdown
 # Personal Knowledge Base
 
 This repository hosts a personal knowledge base built with **MkDocs**, managed with **Git**, and synchronized via **pCloud**. It supports a clear directory structure, massive Markdown files, cross-device access (including Android and iOS), Retrieval-Augmented Generation (RAG) compatibility, and AI-driven automation for dynamic content generation.
