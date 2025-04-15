@@ -1,0 +1,28 @@
+name: AI Update
+on:
+  schedule:
+    - cron: "0 8 * * *" # Daily 8:00
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+      - name: Run AI Script
+        run: |
+          pip install pyyaml
+          python ai_crawler.py
+      - name: Commit Changes
+        run: |
+          git config user.name "AI Bot"
+          git config user.email "bot@example.com"
+          git add .
+          git commit -m "AI update" || echo "No changes"
+          git push
+      - name: Deploy Site
+        run: |
+          pip install mkdocs mkdocs-material
+          mkdocs gh-deploy --force
